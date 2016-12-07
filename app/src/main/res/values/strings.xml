@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">B6FirstApp</string>
+    <string-array name="location_array">
+        <item>Alabama</item>
+        <item>Alaska </item>
+        <item>Arizona </item>
+        <item>Arkansas</item>
+        <item>California </item>
+        <item>Colorado</item>
+        <item>Connecticut </item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii </item>
+        <item>Idaho </item>
+        <item>Illinois </item>
+        <item>Indiana </item>
+        <item>Iowa </item>
+        <item>Kansas </item>
+        <item>Kentucky </item>
+        <item>Louisiana </item>
+        <item>Maine </item>
+        <item>Maryland </item>
+        <item>Massachusetts </item>
+        <item>Michigan </item>
+        <item>Minnesota </item>
+    </string-array>
+</resources>
