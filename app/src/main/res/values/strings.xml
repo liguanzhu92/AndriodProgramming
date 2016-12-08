@@ -1,29 +1,46 @@
 <resources>
-    <string name="app_name">B6FirstApp</string>
+    <string name="app_name">Face U</string>
+    <string name="location">Location</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sing_up">Sign up</string>
+    <string name = "developeremail">liguanzhu390@gmail.com</string>
     <string-array name="location_array">
         <item>Alabama</item>
-        <item>Alaska </item>
-        <item>Arizona </item>
+        <item>Alaska</item>
+        <item>Arizona</item>
         <item>Arkansas</item>
-        <item>California </item>
+        <item>California</item>
         <item>Colorado</item>
-        <item>Connecticut </item>
+        <item>Connecticut</item>
         <item>Delaware</item>
         <item>District of Columbia</item>
         <item>Florida</item>
         <item>Georgia</item>
-        <item>Hawaii </item>
-        <item>Idaho </item>
-        <item>Illinois </item>
-        <item>Indiana </item>
-        <item>Iowa </item>
-        <item>Kansas </item>
-        <item>Kentucky </item>
-        <item>Louisiana </item>
-        <item>Maine </item>
-        <item>Maryland </item>
-        <item>Massachusetts </item>
-        <item>Michigan </item>
-        <item>Minnesota </item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
     </string-array>
+    <string-array name="left_bar">
+        <item>Profile</item>
+        <item>Today</item>
+        <item>Group</item>
+        <item>Photo</item>
+    </string-array>
+
+
 </resources>

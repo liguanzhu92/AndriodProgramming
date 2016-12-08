@@ -24,15 +24,15 @@
     <RelativeLayout
             android:layout_width="250dp"
             android:layout_height="230dp"
-            android:background="#AAFFF0F5"
-            android:layout_marginBottom="54dp"
+            android:background="@color/background"
+            android:layout_marginBottom="88dp"
             android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
 
         <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:hint="Username"
+                android:hint="@string/username"
                 android:ems="10"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="34dp" android:id="@+id/editUsername"/>
@@ -41,22 +41,34 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:id="@+id/editPassword" android:layout_below="@+id/editUsername"
                 android:layout_alignStart="@+id/editUsername" android:layout_marginTop="25dp"/>
         <Button
-                android:text="Sign in"
+                android:text="@string/sign_in"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonSignIn"
                 android:layout_alignParentBottom="true" android:layout_alignStart="@+id/editPassword"
                 android:layout_marginBottom="12dp"/>
         <Button
-                android:text="Sing up"
+                android:text="@string/sing_up"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonSignUp"
                 android:layout_alignBaseline="@+id/buttonSignIn" android:layout_alignBottom="@+id/buttonSignIn"
                 android:layout_alignEnd="@+id/editPassword"/>
     </RelativeLayout>
+    <TextView
+            android:text="Contact Us"
+            android:textColor="#AAFFF0F5"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" android:id="@+id/textViewContect"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/textView"
+            android:layout_toStartOf="@+id/textViewContect" android:id="@+id/buttontest"/>
 </RelativeLayout>

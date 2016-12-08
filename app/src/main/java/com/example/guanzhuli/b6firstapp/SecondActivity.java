@@ -2,9 +2,13 @@ package com.example.guanzhuli.b6firstapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import android.content.Intent;
+
+import static com.example.guanzhuli.b6firstapp.MainBrowserActivity.KEY_USERNAME;
 
 public class SecondActivity extends AppCompatActivity {
     Button regCancel;
@@ -17,7 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         // receive the information, using key
         // make sure the consistency for the passing information key
         Intent i = getIntent();
-        String userName = i.getExtras().getString("keyUsername");
+        String userName = i.getExtras().getString(KEY_USERNAME);
         Toast.makeText(SecondActivity.this, "Receive UserName "+ getIntent().getExtras().getString("keyUsername"),
                 Toast.LENGTH_LONG).show();
         editUserName = (EditText) findViewById(R.id.editUserName);
@@ -42,4 +46,6 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
