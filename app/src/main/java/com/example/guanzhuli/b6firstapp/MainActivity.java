@@ -134,4 +134,10 @@ public class MainActivity extends AppCompatActivity {
     private void function3(){
         Toast.makeText(this, "function 3 called", Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(MainActivity.this, "on Destroy method", Toast.LENGTH_LONG).show();
+    }
 }

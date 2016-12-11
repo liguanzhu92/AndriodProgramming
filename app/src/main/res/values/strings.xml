@@ -38,8 +38,9 @@
     <string-array name="left_bar">
         <item>Profile</item>
         <item>Today</item>
-        <item>Group</item>
+        <item>Event</item>
         <item>Photo</item>
+        <item>Face U</item>
     </string-array>
 
 

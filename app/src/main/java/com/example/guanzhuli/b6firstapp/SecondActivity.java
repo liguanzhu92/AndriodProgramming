@@ -11,7 +11,8 @@ import android.content.Intent;
 import static com.example.guanzhuli.b6firstapp.MainBrowserActivity.KEY_USERNAME;
 
 public class SecondActivity extends AppCompatActivity {
-    Button regCancel;
+    Button mregCancel;
+    Button mregComfirm;
     EditText editUserName;
     Spinner spinnerLocation;
     @Override
@@ -35,10 +36,20 @@ public class SecondActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //绑定Adapter
         spinnerLocation.setAdapter(adapter);
-
+        // build Confirm
+        mregComfirm = (Button) findViewById(R.id.regConfirm);
+        mregComfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String userName = editUserName.getText().toString();
+                Intent i = new Intent(SecondActivity.this, MainBrowserActivity.class);
+                i.putExtra(KEY_USERNAME, userName);
+                startActivity(i);
+            }
+        });
         // build Cancel Register
-        regCancel = (Button) findViewById(R.id.regCancel);
-        regCancel.setOnClickListener(new View.OnClickListener() {
+        mregCancel = (Button) findViewById(R.id.regCancel);
+        mregCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent( SecondActivity.this,MainActivity.class);
